@@ -6,4 +6,5 @@
 2. Execute "docker run -e AZP_URL=\<Azure DevOps instance\> -e AZP_TOKEN=\<PAT token\> -e AZP_AGENT_NAME=mydockeragent -e AZP_POOL=<(optional) pool to register the agent under> dockeragent:latest" to start and listen for build tasks.
 
 This Dockerfile is created, combining the Dockerfiles from [VS build tools container](https://docs.microsoft.com/en-us/visualstudio/install/build-tools-container?view=vs-2019) and [Azure pipeline agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops).\
-Powershell file start.ps1 can be found in [Azure pipeline agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops) and [start.ps1](https://github.com/PacktPublishing/Learning-Azure-DevOps---B16392/blob/master/Chapter-6/start.ps1).
+Powershell file start.ps1 can be found in [Azure pipeline agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops) and [start.ps1](https://github.com/PacktPublishing/Learning-Azure-DevOps---B16392/blob/master/Chapter-6/start.ps1).\
+For more information and and how to get VSTest to run on this container please refer to the intructions on [Docker DotNet build agent blog post](https://sameerak-blog.blogspot.com/2021/07/azure-devops-docker-dotnet-build-agent.html)
